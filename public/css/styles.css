@@ -1,14 +1,54 @@
 body {
-    background-color:#EAC926;
+    
     font-family:'Roboto', sans-serif;
+}
+
+header {
+    background-color:#EAC926;
+}
+
+main {
+    background-color:#ebebeb;
+    justify-content: center;
+    width: 90vh;
+    display:grid;
+}
+
+article {
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.img-art {
+    margin:10px;
+    border-top: 1px solid #ebebeb;
+    
+}
+
+.caja-compra {
+    background-color:white;
+    width:100%;
+}
+
+.camion {
+    color:#39b54a;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #39b54a;
+    border-radius:100%;
+    text-align:center;
 }
 
 p {
     font-size:12px;
+    margin:0;
+    
 }
 
 h2 {
     font-size:24px;
+    color:#666;
+    font-weight: 800;
 }
 
 .precio {
@@ -17,10 +57,12 @@ h2 {
 
 .descuento {
     font-size:16px;
+    color:#39b54a;
 }
 
 .desc {
     font-size:16px;
+    display:none;
 }
 
 footer {
@@ -30,16 +72,43 @@ footer {
 
 .burger-menu {
     background-color:#1259c3;
+    border-radius: 4px;
     color:white;
-    display:block;
-    width: 1em;
-    justify-content: center;
+    padding: 0.2em 0px;
+    width: 1.6em;
+    text-align:center;
     margin-left: 50%;
-    padding-left: 2px;
 }
 
 .footer-img {
     font-size: 2em;
     margin-bottom: 10px;
     color:#1259c3;
+}
+
+.navbar {
+    display:none;
+}
+
+@media (min-width:361px){
+    .navbar {
+        display:block;
+    }
+
+    article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .desc {
+        display:flex;
+    }
+
+    .burger-menu {
+        display:none;
+    }
+
+}
+
+@media (min-width:769px){
+
 }
