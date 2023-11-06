@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/prodForm.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <title>Mercado Liebre</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-top-bar"><img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" class="logo">
+            <div class="barraBusqueda"><input type="text" id="barraBusq"><i class="fas fa-search"></i></div>
+            <h3 class="header-title"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito!</h3>
+        </div>
+        <nav>
+            <ul class="nav-left">
+                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="#tiendas-ofi">Tiendas oficiales</a></li>
+                <li><a href="#vender">Vender</a></li>
+                <li><a href="#ayuda">Ayuda</a></li>
+            </ul><ul class="nav-right">
+                <li><a href="/register">Crea tu cuenta</a><i class="far fa-id-card"></i></li>
+                <li><a href="/login">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
+                <li><a href="/my-shop">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
+            </ul>            
+        </nav>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        
+
+    </header>
+    <div class="prod-main">
+        <form action="" method="POST" id="prodForm">
+            <label for="prod-name">Nuevo producto:</label><input type="text" name="prod-name" id=""><br>
+            <label for="prod-price">Precio:</label><input type="text" name="prod-price" id=""><br>
+            <label for="en-oferta">En oferta:</label><input type="radio" name="en-oferta" value="Está en oferta?">
+        </form>
+    </div>
+</body>
+</html>

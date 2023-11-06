@@ -12,6 +12,10 @@ app.get("/", (req,res)=> {
     res.sendFile(path.resolve("./views/home.html"))
 })
 
+app.get('/form', (req,res) => {
+    res.sendFile(path.resolve('views/productForm.html'));
+})
+
 app.get("/home", (req,res)=> {
     res.sendFile(path.resolve("./views/home.html"))
 })

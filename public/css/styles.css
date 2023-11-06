@@ -74,7 +74,9 @@ nav a {
     display:inline-block;
 }
 
-
+#main-banner {
+    width: 100%;
+}
 
 .img-art {
     margin:10px;
@@ -159,7 +161,15 @@ footer {
     color:#1259c3;
 }
 
+.banner-cont {
+    display:none;
+}
 
+
+#prodForm {
+    display:block;
+    text-align: center;
+}
 
 @media (min-width:361px){
 
@@ -172,6 +182,16 @@ footer {
     }
 
     .burger-menu {
+        display:block;
+    }
+
+
+
+}
+
+@media (min-width:560px){
+
+    .banner-cont {
         display:block;
     }
 

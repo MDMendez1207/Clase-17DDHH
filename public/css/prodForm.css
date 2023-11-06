@@ -1,0 +1,12 @@
+.prod-main {
+    background-color: #ebebeb;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+
+label {
+    display:inline-block;
+    margin: 8px 0;
+    
+}
