@@ -1,3 +1,19 @@
+:root {
+    --bg-nav: #EAC926;
+    --zz: #03264C;
+    --icon-clr: #1259c3;
+    --bg-apagado: #666;
+    --grey: #ebebeb;
+    --truck-green: #39b54a;
+    --link-dark:#222222;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
 .prod-main {
     background-color: #ebebeb;
     justify-content: center;
@@ -5,8 +21,54 @@
     margin: auto;
 }
 
+.log-main {
+    background-color:#ebebeb;
+    justify-content: center;
+    
+    margin:auto;
+    display: flex;
+    align-items: center;
+}
+
+.log-main > form {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+}
+
+#prodForm {
+    display:block;
+    text-align: center;
+}
+
+button {
+    appearance: none;
+    color: white;
+    border: 0;
+    padding: 10px;
+    border-radius: 3px;
+    font-weight: 500;
+    margin:8px 12px;
+    background-color: var(--icon-clr);
+}
+
+#ret-btn {
+    width: 30%;
+    
+}
+
 label {
     display:inline-block;
     margin: 8px 0;
     
+}
+
+.reg-main {
+    margin: 16px;
+}
+
+.reg-main > form {
+    display:flex;
+    flex-direction: column;
 }

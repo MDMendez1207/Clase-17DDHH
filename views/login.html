@@ -38,28 +38,12 @@
 
     </header>
 
-    <main class="reg-main">
-        <form action="" method="post">
-            <label for="nombre"></label><input type="text" name="nombre" placeholder="Nombre y apellido">
-            <label for="username"></label><input type="text" name="username" placeholder="Nombre y apellido">
-            <label for="mail"></label><input type="email" name="mail" placeholder="Dirección de mail">
-            <label for="fNac"></label><input type="date" name="fNac" placeholder="Fecha de nacimiento">
-            <label for="dom"></label><input type="text" name="dom" placeholder="Domicilio">
-            <label for="tipoPerfil"><h2>Perfil del usuario</h2></label><br>
-            <input type="radio" name="tipoPerfil" value="Comprador"><span>Comprador</span>
-            <input type="radio" name="tipoPerfil" value="Vendedor"><span>Vendedor</span>
-            <label for="intereses"><h2>Intereses</h2></label><br>
-            <input type="checkbox" name="intereses" value="Electro">Electro
-            <input type="checkbox" name="intereses" value="Moda">Moda
-            <input type="checkbox" name="intereses" value="Hogar">Hogar
-            <input type="checkbox" name="intereses" value="Juguetería">Juguetería
-            <input type="checkbox" name="intereses" value="Vida sana">Vida sana
-            <label for="foto">Sacate una foto para tu perfil</label><input type="file" name="foto" id="">
-            <label for="wordpass"></label><input type="password" name="wordpass" id="" placeholder="Ingresa tu contraseña">
-            <label for="wordpass2"></label><input type="password" name="wordpass2" id="" placeholder="Repite tu contraseña">
-            <br><button type="reset">Regresar</button><br><button type="submit">Enviar</button>
 
-
+    <main class="log-main">
+        <form action="/home" method="get">
+            <div class="flexbox"><label for="username">Usuario:</label><input type="text" name="username" placeholder="Ingresá tu usuario"></div>
+            <div class="flexbox"><label for="wordpass">Contraseña:</label><input type="password" name="wordpass" placeholder="Y tu contraseña"></div>
+            <button type="submit" formaction="/home" id="ret-btn">Regresar</button>
         </form>
     </main>
 
