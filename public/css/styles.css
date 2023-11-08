@@ -20,46 +20,16 @@ body {
 }
 
 header {
-    background-color:var(--bg-nav)
+    background-color:var(--bg-nav);
+    
+    width: 100%;
+    z-index: 10;
 }
 
 .header-top-bar{
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-
-.home-main {
-    background-color:var(--grey);
-    justify-content: center;
-    width: 90vh;
-    margin:auto;
-    padding-bottom: 12px;
-}
-
-section {
-    display:flex;
-    flex-wrap:wrap;
-}
-
-.header-title {
-    text-align:center;
-    width: 100%;
-}
-
-.logo {
-    width: 50%;
-    height: 80px;
-}
-
-.barraBusqueda {
-    width: 50%;
-}
-
-article {
-    padding-left:15px;
-    padding-right:15px;
-    margin:auto;
 }
 
 nav {
@@ -85,9 +55,47 @@ nav a {
     display:inline-block;
 }
 
+
 #main-banner {
     width: 100%;
 }
+
+
+.home-main {
+    background-color:var(--grey);
+    justify-content: center;
+    
+    margin:auto;
+    padding-bottom: 12px;
+}
+
+.header-title {
+    text-align:center;
+    width: 100%;
+}
+
+.logo {
+    width: 50%;
+    height: 80px;
+}
+
+.barraBusqueda {
+    width: 50%;
+}
+
+section {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+article {
+    padding-left:15px;
+    padding-right:15px;
+    margin:auto;
+    margin-bottom: 10px;
+}
+
 
 .flexbox {
     display: flex;
@@ -95,9 +103,26 @@ nav a {
     align-items: center;
 }
 
-.img-art {
+.box-img-art {
     margin:10px;
     border-top: 1px solid var(--grey);
+    
+}
+
+.box-img-art:hover {
+    box-shadow:0px 0px 10px rgb(100, 100, 100); ;
+    .camion {
+        transform: rotate(-90deg);
+        transition-property: transform;
+        transition-duration: 800ms;
+    }
+}
+
+
+
+.img-art {
+    height:20rem;
+    max-height: 400px;
 }
 
 .caja-compra {
@@ -108,7 +133,30 @@ nav a {
     flex-wrap: wrap;
 }
 
-.caja-compra>.camion {
+
+
+.caja-compra:hover .desc {
+    display: block;
+}
+
+.precio {
+    font-size:18px;
+    width:30%;
+}
+
+.descuento {
+    font-size:16px;
+    color:var(--truck-green);
+    width:30%;
+}
+
+.desc {
+    font-size:16px;
+    display:none;
+    width:100%;
+}
+
+.camion {
     display: block;
     font-size: 16px;
     padding: 5px;
@@ -141,28 +189,19 @@ h2 {
     font-weight: 800;
     width: 80%;
     margin:auto;
+    margin:16px;
+    text-align: center;
 }
 
-.precio {
-    font-size:18px;
-    width:30%;
-}
-
-.descuento {
-    font-size:16px;
-    color:var(--truck-green);
-    width:30%;
-}
-
-.desc {
-    font-size:16px;
-    display:none;
-    width:100%;
-}
 
 footer {
     justify-content: center;
     text-align:center;
+}
+
+footer > p {
+    text-align: justify;
+    padding-top: 10px;
 }
 
 .burger-menu {
@@ -199,10 +238,6 @@ footer {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
-    .desc {
-        display:flex;
-    }
-
     .burger-menu {
         display:block;
     }
@@ -215,6 +250,7 @@ footer {
 
     .banner-cont {
         display:block;
+        background-color: var(--grey);
     }
 
 }
@@ -242,10 +278,20 @@ footer {
         align-self: center;
     }
 
+    .img-art {
+        height: 400px;
+    }
+
+    footer > ul {
+        display:flex
+    }
+
 }
 
 @media (min-width:1200px) {
     .header-top-bar, nav {
         max-width: 1200px;
     }
+
+
 }
