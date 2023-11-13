@@ -15,9 +15,10 @@
 
 <body>
     <header>
-        <div class="header-top-bar"><img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" class="logo">
+        <div class="header-top-bar"><a href="/"><img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" class="logo"></a>
             <div class="barraBusqueda"><input type="text" id="barraBusq"><i class="fas fa-search"></i></div>
-            <h3 class="header-title"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito!</h3>
+            <h3 class="header-title"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito!
+            </h3>
         </div>
         <nav>
             <ul class="nav-left">
@@ -25,24 +26,37 @@
                 <li><a href="#tiendas-ofi">Tiendas oficiales</a></li>
                 <li><a href="#vender">Vender</a></li>
                 <li><a href="#ayuda">Ayuda</a></li>
-            </ul><ul class="nav-right">
+            </ul>
+            <ul class="nav-right">
                 <li><a href="/register">Crea tu cuenta</a><i class="far fa-id-card"></i></li>
                 <li><a href="/login">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
                 <li><a href="/my-shop">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
-            </ul>            
+            </ul>
         </nav>
         <div class="burger-menu">
             <i class="fas fa-bars"></i>
         </div>
-        
+
 
     </header>
     <div class="prod-main">
         <form action="" method="POST" id="prodForm">
-            <label for="prod-name">Nuevo producto:</label><input type="text" name="prod-name" id=""><br>
-            <label for="prod-price">Precio:</label><input type="text" name="prod-price" id=""><br>
-            <label for="en-oferta">En oferta:</label><input type="radio" name="en-oferta" value="Está en oferta?">
+            <div class="clase-control"><label for="prod-name">Nuevo producto:</label><input type="text" name="prod-name"
+                    id=""></div>
+            <div class="clase-control"><label for="prod-price">Precio:</label><input type="text" name="prod-price"
+                    id=""></div>
+            <div class="clase-control"><label for="categoria">Categoría:</label><select name="categoria"
+                    id=""><option value="hogar">Hogar</option><option value="electro">Electro</option>
+                    <option value="moda">Moda</option></select></div>
+            <div class="clase-control"><label for="ciudad">Categoría:</label><select name="ciudad"
+                        id=""><option value="buenos aires">Buenos Aires</option><option value="cordoba">Córdoba</option>
+                        <option value="otra">Otra</option></select></div>
+                        <div class="clase-control"><label for="producto descripcion">Nuevo producto:</label><textarea name="producto descripcion" id="" cols="30" rows="10"></textarea></div>
+            <div class="clase-control"><label for="en-oferta">En oferta:</label><input type="radio" name="en-oferta"
+                    value="Está en oferta?"></div>
+                    <button type="reset">Regresar</button><button type="submit">Enviar</button>
         </form>
     </div>
 </body>
+
 </html>
