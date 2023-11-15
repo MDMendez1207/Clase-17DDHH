@@ -56,16 +56,18 @@ button {
     font-weight: 500;
     margin:8px 12px;
     background-color: var(--icon-clr);
+    transition: 0.4s;
+}
+
+button:hover {
+    cursor:pointer;
+    color:var(--zz);
+    background-color: white;
 }
 
 #ret-btn {
     width: 30%;
     
-}
-
-#ret-btn:hover {
-    background-color: #0022AA;
-    transition: all 0.8s;
 }
 
 label {
@@ -102,22 +104,26 @@ label {
 }
 
 input {
-    
+    transition:0.1s;
     border-width: 1px;
     border-radius: 5px;
-    padding: 5px 0;
+    padding: 5px 3px;
 }
 
 input:focus {
     outline:none;
     border-style:solid;
     border-width: 3px;
-    padding:1px;
+    padding:3px;
     border-color: var(--icon-clr)
 }
 
 .label-for-intereses {
     width: 100%;
+}
+
+.for-Perfil {
+    text-align: center;
 }
 
 .for-intereses > div {

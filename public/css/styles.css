@@ -56,6 +56,10 @@ nav a {
 }
 
 
+.a-link:hover {
+    text-decoration: underline;
+}
+
 #main-banner {
     width: 100%;
 }
@@ -121,7 +125,17 @@ article {
 .box-img-art {
     margin:10px;
     border-top: 1px solid var(--grey);
+    transition: 0.3s;
     
+}
+
+.box-img-art:not(:hover) {
+    
+    .camion {
+        transform: rotate(0deg);
+        transition-property: transform;
+        transition-duration: 800ms;
+    }
 }
 
 .box-img-art:hover {
@@ -136,22 +150,27 @@ article {
 
 
 .img-art {
-    height:20rem;
-    max-height: 400px;
+    height:280px;
 }
 
 .caja-compra {
     background-color:white;
-    width:100%;
+    width: 100%;
+    max-width:280px;
     display:flex;
     position:relative;
     flex-wrap: wrap;
+    height:38px;
 }
 
-
+.caja-compra:hover {
+    height:73px;
+    transition: all 0.3s;
+}
 
 .caja-compra:hover .desc {
-    display: block;
+    transition: 0.2s;
+    display:inline;
 }
 
 .precio {
@@ -168,7 +187,7 @@ article {
 .desc {
     font-size:16px;
     display:none;
-    width:100%;
+    
 }
 
 .camion {
@@ -249,10 +268,6 @@ footer {
 
 @media (min-width:361px){
 
-    article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-
     .burger-menu {
         display:block;
     }
@@ -309,10 +324,6 @@ footer {
         align-self: center;
     }
 
-    .img-art {
-        height: 400px;
-    }
-
     footer > ul {
         display:flex
     }
@@ -336,11 +347,13 @@ footer {
         font-size: 1.5rem;
         margin-left:5px;
     }
+
 }
 
 @media (min-width:1200px) {
     .header-top-bar, nav {
         max-width: 1200px;
+        margin:auto;
     }
 
 

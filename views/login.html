@@ -41,12 +41,31 @@
 
     <main class="log-main">
         <form action="/home" method="get">
-            <div class="flexbox"><label for="username">Usuario:</label><input type="text" name="username" placeholder="Ingresá tu usuario"></div>
-            <div class="flexbox"><label for="wordpass">Contraseña:</label><input type="password" name="wordpass" placeholder="Y tu contraseña"></div>
+            <div class="flexbox"><label for="username">Usuario:</label><input type="text" name="username" placeholder="Ingresá tu usuario" required></div>
+            <div class="flexbox"><label for="wordpass">Contraseña:</label><input type="password" name="wordpass" placeholder="Y tu contraseña" required></div>
             <button type="submit" formaction="/home" id="ret-btn">Regresar</button>
             
         </form>
     </main>
-
+    <footer>
+        <ul type="none">
+            <li><i class="fas fa-credit-card footer-img"></i><br>
+                <p><b>Pagá con tarjeta o en efectivo</b><br>
+                    Con Mercado Liebre Cash tenés cuotas sin interés con tarjeta o efectivo en
+                    puntos de pago. ¡Y siempre es seguro!</p>
+            </li>
+            <li><i class="fas fa-gift footer-img"></i><br>
+                <p><b>Envío gratis desde $ 2.500</b><br>
+                    Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.</p>
+            </li>
+            <li><i class="fas fa-user-shield footer-img"></i><br>
+                <p><b>Seguridad, de principio a fin</b><br>
+                    ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                    porque estás siempre protegid@.</p>
+            </li>
+        </ul>
+        <p><b>Copyright © 1999-2020 MercadoLiebre S.R.L.</b></p>
+    </footer>
 </body>
 </html>
