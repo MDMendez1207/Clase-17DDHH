@@ -23,10 +23,14 @@
 }
 
 .log-main {
-    background-color:white;
+    background-color:var(--grey);
     justify-content: center;
-    
+    width: fit-content;
+    padding: 0px 12px;
+    border: solid black 1px;
+    border-radius: 3%;
     margin:auto;
+    margin-top: 12px;
     display: flex;
     align-items: center;
 }
